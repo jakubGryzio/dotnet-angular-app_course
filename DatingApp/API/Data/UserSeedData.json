@@ -32,7 +32,7 @@
     "Country": "French Polynesia",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/41.jpg",
+        "url": "https://randomuser.me/api/portraits/women/2.jpg",
         "isMain": true
       }
     ]
@@ -89,7 +89,7 @@
     "Country": "Nigeria",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/93.jpg",
+        "url": "https://randomuser.me/api/portraits/women/95.jpg",
         "isMain": true
       }
     ]
@@ -108,7 +108,7 @@
     "Country": "Uruguay",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/male/2.jpg",
+        "url": "https://randomuser.me/api/portraits/men/2.jpg",
         "isMain": true
       }
     ]
@@ -127,7 +127,7 @@
     "Country": "Slovenia",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/male/26.jpg",
+        "url": "https://randomuser.me/api/portraits/men/26.jpg",
         "isMain": true
       }
     ]
@@ -146,7 +146,7 @@
     "Country": "Iran",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/male/49.jpg",
+        "url": "https://randomuser.me/api/portraits/men/49.jpg",
         "isMain": true
       }
     ]
@@ -165,7 +165,7 @@
     "Country": "Ecuador",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/male/83.jpg",
+        "url": "https://randomuser.me/api/portraits/men/83.jpg",
         "isMain": true
       }
     ]
@@ -184,7 +184,7 @@
     "Country": "Papua New Guinea",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/male/92.jpg",
+        "url": "https://randomuser.me/api/portraits/men/92.jpg",
         "isMain": true
       }
     ]
