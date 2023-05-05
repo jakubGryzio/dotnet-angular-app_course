@@ -13,14 +13,12 @@ namespace API.Controllers
     {
         private readonly UserManager<AppUser> userManager;
         private readonly ITokenService tokenService;
-        private readonly IUserRepository userRepository;
         private readonly IMapper mapper;
 
-        public AccountController(UserManager<AppUser> userManager, ITokenService tokenService, IUserRepository userRepository, IMapper mapper)
+        public AccountController(UserManager<AppUser> userManager, ITokenService tokenService, IMapper mapper)
         {
             this.userManager = userManager;
             this.tokenService = tokenService;
-            this.userRepository = userRepository;
             this.mapper = mapper;
         }
 

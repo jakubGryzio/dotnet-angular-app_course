@@ -47,7 +47,8 @@ namespace API.Controllers
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
-            return await unitOfWork.UserRepository.GetMemberAsync(username);
+            var isCurrentUser = username == User.GetUsername();
+            return await unitOfWork.UserRepository.GetMemberAsync(username, isCurrentUser);
         }
 
         [HttpPut]
@@ -80,8 +81,6 @@ namespace API.Controllers
                 Url = result.SecureUrl.AbsoluteUri,
                 PublicId = result.PublicId
             };
-
-            if (user.Photos.Count == 0) photo.IsMain = true;
 
             user.Photos.Add(photo);
 
@@ -121,7 +120,7 @@ namespace API.Controllers
         {
             var user = await unitOfWork.UserRepository.GetUserByUsernameAsync(User.GetUsername());
 
-            var photo = user.Photos.FirstOrDefault(p => p.Id == photoId);
+            var photo = await unitOfWork.PhotoRepository.GetPhotoById(photoId);
 
             if (photo == null) return NotFound();
 
