@@ -20,6 +20,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:API"
+          context: "{{defaultContext}}:DatingApp/API"
           push: true
           tags: jakubgryzio/datingapp:latest
